@@ -1,0 +1,66 @@
+# Regras de Código - EF Mídias Website
+
+## Padrões Gerais
+
+- Sempre usar TypeScript
+- Componentes funcionais com hooks quando necessário
+- Mobile-first approach em todo o design
+- Usar valores do styleguide.json (não hardcode)
+- Componentes pequenos e reutilizáveis
+
+## Estrutura de Componentes
+
+- Componentes em PascalCase
+- Props tipadas com interfaces TypeScript
+- Usar 'use client' apenas quando necessário (Framer Motion, hooks)
+- Export default para componentes
+
+## Estilização
+
+- Tailwind CSS para estilização
+- Usar classes utilitárias do Tailwind
+- Valores do styleguide.json via Tailwind config
+- Animações com Framer Motion
+- Hover states suaves (transition-all duration-200/300)
+
+## Responsividade
+
+- Breakpoints: sm (640px), md (768px), lg (1024px), xl (1280px)
+- Mobile primeiro: base styles para mobile, md: para desktop
+- Grid: 1 col mobile, 2 tablet, 3 desktop
+- Padding: 24px mobile, 80px desktop
+
+## Performance
+
+- Usar next/image para todas as imagens
+- Lazy loading padrão
+- Framer Motion com viewport={{ once: true }} quando possível
+- Componentes client-side apenas quando necessário
+
+## Nomenclatura
+
+- Arquivos: PascalCase para componentes (Button.tsx)
+- Pastas: lowercase (components/ui/)
+- Variáveis: camelCase
+- Constantes: UPPER_SNAKE_CASE
+
+## Imports
+
+- Usar path aliases (@/components, @/lib, etc)
+- Agrupar imports: React, Next.js, bibliotecas, componentes locais, utils
+- Ordem: externos → internos
+
+## Animações
+
+- Framer Motion para animações
+- initial={{ opacity: 0, y: 20 }} padrão
+- whileInView para scroll animations
+- viewport={{ once: true }} para performance
+- Duração: 0.5s padrão, 0.6s para hero
+
+## Acessibilidade
+
+- Sempre usar semântica HTML correta
+- Alt text em imagens
+- Contraste adequado (preto/branco/azul)
+- Navegação por teclado funcional
