@@ -282,7 +282,7 @@ export default function Home() {
               
               <div className="flex justify-center">
                 <a 
-                  href="https://wa.me/55199995800412?text=Olá! Tenho uma demanda de sistema personalizado."
+                  href="https://wa.me/5519995800412?text=Olá! Tenho uma demanda de sistema personalizado."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-b from-blue-500 to-blue-600 text-white font-semibold text-sm lg:text-base rounded-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_4px_0_#1E40AF,0_6px_12px_rgba(37,99,235,0.4)] hover:-translate-y-0.5 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_6px_0_#1E40AF,0_8px_16px_rgba(37,99,235,0.5)] active:translate-y-0.5 active:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_2px_0_#1E40AF,0_4px_8px_rgba(37,99,235,0.3)] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -391,7 +391,7 @@ export default function Home() {
           {/* Botão CTA */}
           <div className="flex justify-center">
             <a 
-              href="https://wa.me/55199995800412?text=Olá! Gostaria de agendar uma consultoria estratégica."
+              href="https://wa.me/5519995800412?text=Olá! Gostaria de agendar uma consultoria estratégica."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-lg font-semibold rounded-full hover:shadow-[0_8px_24px_rgba(37,99,235,0.4)] hover:scale-105 active:scale-98 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"

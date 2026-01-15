@@ -76,7 +76,7 @@ export default function Hero() {
                 <Button 
                   variant="primary" 
                   size="lg"
-                  href="https://wa.me/55199995800412?text=Olá! Gostaria de agendar uma consultoria estratégica."
+                  href="https://wa.me/5519995800412?text=Olá! Gostaria de agendar uma consultoria estratégica."
                 >
                   Agende Consultoria
                 </Button>
