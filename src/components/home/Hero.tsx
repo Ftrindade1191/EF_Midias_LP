@@ -40,6 +40,7 @@ export default function Hero() {
                   backgroundImage: 'linear-gradient(to right, #2563EB, #3B82F6)'
                 }}
               >
+                {/* @ts-ignore */}
                 <TypeAnimation
                   sequence={[
                     'dados em leads.',
@@ -56,6 +57,7 @@ export default function Hero() {
                     500,
                   ]}
                   wrapper="span"
+                  speed={100}
                   deletionSpeed={50}
                   repeat={Infinity}
                   cursor={true}
