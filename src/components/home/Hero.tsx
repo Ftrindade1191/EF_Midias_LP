@@ -56,7 +56,6 @@ export default function Hero() {
                     500,
                   ]}
                   wrapper="span"
-                  speed={100}
                   deletionSpeed={50}
                   repeat={Infinity}
                   cursor={true}
