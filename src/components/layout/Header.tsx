@@ -34,9 +34,6 @@ export default function Header() {
             <Link href="/bfd" className="text-gray-700 hover:text-black transition-colors">
               BFD
             </Link>
-            <Link href="/styleguide" className="text-gray-700 hover:text-black transition-colors">
-              Styleguide
-            </Link>
           </nav>
           
           <div className="hidden md:block">
@@ -88,13 +85,6 @@ export default function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 BFD
-              </Link>
-              <Link 
-                href="/styleguide" 
-                className="text-gray-700 hover:text-black transition-colors"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Styleguide
               </Link>
               <Button 
                 href="https://wa.me/5519995800412?text=Olá! Gostaria de agendar uma consultoria estratégica." 
