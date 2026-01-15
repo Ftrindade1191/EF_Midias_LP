@@ -30,7 +30,7 @@ export default function BFDPage() {
                 Suas pacientes com um webapp exclusivo da sua marca, acessado direto pelo navegador.
               </p>
               <div>
-                <Button href="#orcamento" size="lg" variant="primary">
+                <Button href="https://wa.me/55199995800412?text=Olá! Tenho interesse no BFD." size="lg" variant="primary">
                   Solicitar orçamento
                 </Button>
               </div>
@@ -185,7 +185,7 @@ export default function BFDPage() {
             </div>
 
             <div className="text-center">
-              <Button href="#consultoria" size="lg" variant="primary">
+              <Button href="https://wa.me/55199995800412?text=Olá! Tenho interesse no BFD." size="lg" variant="primary">
                 Solicitar orçamento
               </Button>
             </div>

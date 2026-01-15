@@ -46,9 +46,21 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4 text-black">Serviços</h4>
             <ul className="space-y-2 text-sm text-gray-600">
-              <li>Tráfego Pago</li>
-              <li>IA Comercial</li>
-              <li>Desenvolvimento</li>
+              <li>
+                <Link href="/#trafego-pago" className="hover:text-black transition-colors">
+                  Tráfego Pago
+                </Link>
+              </li>
+              <li>
+                <Link href="/ef-vendas" className="hover:text-black transition-colors">
+                  IA Comercial
+                </Link>
+              </li>
+              <li>
+                <Link href="/bfd" className="hover:text-black transition-colors">
+                  Desenvolvimento
+                </Link>
+              </li>
             </ul>
           </div>
           
@@ -56,7 +68,7 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 text-black">Contato</h4>
             <ul className="space-y-2 text-sm text-gray-600">
               <li>
-                <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">
+                <a href="https://wa.me/55199995800412" target="_blank" rel="noopener noreferrer" className="hover:text-black transition-colors">
                   WhatsApp
                 </a>
               </li>

@@ -132,7 +132,7 @@ export default function Home() {
           </div>
 
           {/* Categoria 2: Tráfego pago */}
-          <div className="mb-6 flex justify-center mt-16">
+          <div id="trafego-pago" className="mb-6 flex justify-center mt-16 scroll-mt-20">
             <Badge variant="blue">Tráfego pago</Badge>
           </div>
 
@@ -282,7 +282,7 @@ export default function Home() {
               
               <div className="flex justify-center">
                 <a 
-                  href="https://wa.me/5519995800412?text=Olá! Tenho uma demanda de sistema personalizado."
+                  href="https://wa.me/55199995800412?text=Olá! Tenho uma demanda de sistema personalizado."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-b from-blue-500 to-blue-600 text-white font-semibold text-sm lg:text-base rounded-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_4px_0_#1E40AF,0_6px_12px_rgba(37,99,235,0.4)] hover:-translate-y-0.5 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_6px_0_#1E40AF,0_8px_16px_rgba(37,99,235,0.5)] active:translate-y-0.5 active:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_2px_0_#1E40AF,0_4px_8px_rgba(37,99,235,0.3)] transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -332,11 +332,11 @@ export default function Home() {
               viewport={{ once: true }}
             >
               <h2 className="text-3xl lg:text-4xl font-bold">
-                Somos uma empresa que fala a língua do empresário local
+                Somos uma empresa que fala a língua do empresário
               </h2>
               <div className="space-y-4 text-base lg:text-lg text-gray-600 leading-relaxed">
                 <p>
-                  Entendemos seus desafios, respeitamos seu investimento e focamos no que realmente importa: dinheiro no bolco e crescimento real.
+                  Entendemos seus desafios, respeitamos seu investimento e focamos no que realmente importa: dinheiro no bolso e crescimento.
                 </p>
                 <p>
                   A EF Mídias é uma consultoria especializada em crescimento comercial para negócios locais. Atuamos a partir de Mogi Mirim-SP com projetos em todo o país, sempre com foco total em performance.
@@ -346,6 +346,14 @@ export default function Home() {
                 </p>
                 <p>
                   Nossa abordagem une visão estratégica, execução de ponta e mentalidade de dono. Não vendemos vaidade. Vendemos crescimento mensurável.
+                </p>
+              </div>
+              <div className="mt-8 pt-6 border-t border-gray-200">
+                <p className="text-base lg:text-lg font-semibold text-gray-900">
+                  Fernando Trindade
+                </p>
+                <p className="text-sm lg:text-base text-gray-600">
+                  Proprietário EF Mídias
                 </p>
               </div>
             </motion.div>
@@ -383,7 +391,7 @@ export default function Home() {
           {/* Botão CTA */}
           <div className="flex justify-center">
             <a 
-              href="https://wa.me/5519995800412?text=Olá! Gostaria de agendar uma consultoria estratégica."
+              href="https://wa.me/55199995800412?text=Olá! Gostaria de agendar uma consultoria estratégica."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white text-lg font-semibold rounded-full hover:shadow-[0_8px_24px_rgba(37,99,235,0.4)] hover:scale-105 active:scale-98 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"

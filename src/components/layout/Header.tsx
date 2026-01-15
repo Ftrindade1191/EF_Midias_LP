@@ -40,7 +40,10 @@ export default function Header() {
           </nav>
           
           <div className="hidden md:block">
-            <Button href="/#consultoria" size="sm">
+            <Button 
+              href="https://wa.me/55199995800412?text=Olá! Gostaria de agendar uma consultoria estratégica." 
+              size="sm"
+            >
               Agendar Consultoria
             </Button>
           </div>
@@ -93,7 +96,11 @@ export default function Header() {
               >
                 Styleguide
               </Link>
-              <Button href="/#consultoria" size="sm" className="w-full">
+              <Button 
+                href="https://wa.me/55199995800412?text=Olá! Gostaria de agendar uma consultoria estratégica." 
+                size="sm" 
+                className="w-full"
+              >
                 Agendar Consultoria
               </Button>
             </nav>

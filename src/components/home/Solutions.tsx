@@ -13,6 +13,7 @@ interface SolutionCardProps {
   ctaText: string
   href?: string
   isScroll?: boolean
+  scrollToId?: string
   delay?: number
 }
 
@@ -24,12 +25,13 @@ function SolutionCard({
   ctaText, 
   href, 
   isScroll,
+  scrollToId,
   delay = 0 
 }: SolutionCardProps) {
   const handleScroll = (e: React.MouseEvent) => {
-    if (isScroll) {
+    if (isScroll && scrollToId) {
       e.preventDefault()
-      const element = document.getElementById('portfolio')
+      const element = document.getElementById(scrollToId)
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' })
       }
@@ -65,15 +67,27 @@ function SolutionCard({
       
       {/* Botão 3D com gradiente azul */}
       <div className="flex justify-center mt-auto">
-        <button 
-          onClick={isScroll ? handleScroll : undefined}
-          className="relative px-6 py-3 bg-gradient-to-b from-blue-500 to-blue-600 text-white font-semibold rounded-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_4px_0_#1E40AF,0_6px_12px_rgba(37,99,235,0.2)] hover:-translate-y-0.5 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_6px_0_#1E40AF,0_8px_16px_rgba(37,99,235,0.3)] active:translate-y-0.5 active:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_2px_0_#1E40AF,0_4px_8px_rgba(37,99,235,0.2)] transition-all duration-200 flex items-center gap-2 group/button focus:outline-none focus:ring-2 focus:ring-blue-500"
-        >
-          {ctaText}
-          <svg className="w-4 h-4 group-hover/button:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-          </svg>
-        </button>
+        {isScroll && scrollToId ? (
+          <button 
+            onClick={handleScroll}
+            className="relative px-6 py-3 bg-gradient-to-b from-blue-500 to-blue-600 text-white font-semibold rounded-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_4px_0_#1E40AF,0_6px_12px_rgba(37,99,235,0.2)] hover:-translate-y-0.5 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_6px_0_#1E40AF,0_8px_16px_rgba(37,99,235,0.3)] active:translate-y-0.5 active:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_2px_0_#1E40AF,0_4px_8px_rgba(37,99,235,0.2)] transition-all duration-200 flex items-center gap-2 group/button focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            {ctaText}
+            <svg className="w-4 h-4 group-hover/button:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </button>
+        ) : href ? (
+          <Link
+            href={href}
+            className="relative px-6 py-3 bg-gradient-to-b from-blue-500 to-blue-600 text-white font-semibold rounded-xl shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_4px_0_#1E40AF,0_6px_12px_rgba(37,99,235,0.2)] hover:-translate-y-0.5 hover:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_6px_0_#1E40AF,0_8px_16px_rgba(37,99,235,0.3)] active:translate-y-0.5 active:shadow-[inset_0_1px_0_rgba(255,255,255,0.2),0_2px_0_#1E40AF,0_4px_8px_rgba(37,99,235,0.2)] transition-all duration-200 flex items-center gap-2 group/button focus:outline-none focus:ring-2 focus:ring-blue-500"
+          >
+            {ctaText}
+            <svg className="w-4 h-4 group-hover/button:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+          </Link>
+        ) : null}
       </div>
       
       {/* Brilho decorativo sutil */}
@@ -89,13 +103,7 @@ function SolutionCard({
       viewport={{ once: true }}
       className="h-full"
     >
-      {!isScroll && href ? (
-        <Link href={href} className="block h-full cursor-default">
-          {cardContent}
-        </Link>
-      ) : (
-        cardContent
-      )}
+      {cardContent}
     </motion.div>
   )
 }
@@ -126,8 +134,9 @@ export default function Solutions() {
               imageAlt="Tráfego Pago - Geração de Leads Qualificados"
               title="Tráfego pago"
               description="Geração de leads qualificados através de Google e Meta Ads."
-              ctaText="Ver portfólio"
+              ctaText="Ver Portfólio"
               isScroll={true}
+              scrollToId="trafego-pago"
               delay={0}
             />
           </div>
@@ -150,8 +159,8 @@ export default function Solutions() {
               imageAlt="Desenvolvimento Sob Medida"
               title="Desenvolvimento sob medida"
               description="Apps e sistemas web personalizados. Construímos a solução ideal para sua marca, baseado nas suas necessidades reais."
-              ctaText="Ver portfólio"
-              isScroll={true}
+              ctaText="Conhecer sistema"
+              href="/bfd"
               delay={0.2}
             />
           </div>

@@ -35,6 +35,15 @@ export default function Button({
   const classes = cn(baseStyles, variants[variant], sizes[size], className)
   
   if (href) {
+    // Se for link externo (http/https), usar tag <a>
+    if (href.startsWith('http://') || href.startsWith('https://')) {
+      return (
+        <a href={href} target="_blank" rel="noopener noreferrer" className={classes}>
+          {children}
+        </a>
+      )
+    }
+    // Caso contrário, usar Link do Next.js para rotas internas
     return (
       <Link href={href} className={classes}>
         {children}

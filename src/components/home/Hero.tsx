@@ -68,7 +68,7 @@ export default function Hero() {
             </div>
             
             <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl">
-              Engenharia de software, tráfego pago e IA para soluções em negócios locais.
+              Engenharia de software, tráfego pago e IA para soluções em negócios.
             </p>
             
             <div className="mt-8 flex flex-col gap-6">
@@ -77,7 +77,7 @@ export default function Hero() {
                 <Button 
                   variant="primary" 
                   size="lg"
-                  href="https://wa.me/5519995800412?text=Olá! Gostaria de agendar uma consultoria estratégica."
+                  href="https://wa.me/55199995800412?text=Olá! Gostaria de agendar uma consultoria estratégica."
                 >
                   Agende Consultoria
                 </Button>

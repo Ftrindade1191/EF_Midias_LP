@@ -63,7 +63,7 @@ export default function MarketingAcquisition() {
             <ul className="space-y-6">
               {[
                 "Estão prontos para investir em crescimento real",
-                "Sabem que leads não surgem do nada — são gerados com estratégia",
+                "Sabem que leads não surgem do nada, são gerados com estratégia",
                 "Entendem que aquisição é a veia principal do negócio"
               ].map((item, index) => (
                 <li key={index} className="flex items-start gap-4">

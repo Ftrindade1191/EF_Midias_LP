@@ -30,7 +30,7 @@ export default function EFVendasPage() {
                 IA que conversa, qualifica, agenda e organiza
               </p>
               <div>
-                <Button href="#demo" size="lg" variant="primary">
+                <Button href="https://wa.me/55199995800412?text=Olá! Tenho interesse no EF Vendas." size="lg" variant="primary">
                   Agendar Demo
                 </Button>
               </div>
@@ -222,7 +222,7 @@ export default function EFVendasPage() {
             </div>
 
             <div className="text-center">
-              <Button href="#consultoria" size="lg" variant="primary">
+              <Button href="https://wa.me/55199995800412?text=Olá! Tenho interesse no EF Vendas." size="lg" variant="primary">
                 Agendar demo gratuita
               </Button>
             </div>
