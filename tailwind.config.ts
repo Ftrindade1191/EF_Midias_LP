@@ -10,6 +10,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        brand: {
+          dark:  '#1B1B1E',
+          light: '#FBFFFE',
+          navy:  '#01366B',
+          gold:  '#FAA916',
+        },
+        surface: {
+          card:   '#252528',
+          border: '#2E2E32',
+          muted:  '#8E8E93',
+        },
         blue: {
           400: styleGuide.colors.accent.blue[400],
           500: styleGuide.colors.accent.blue[500],

@@ -4,7 +4,30 @@
 
 @layer base {
   body {
-    @apply bg-white text-black;
+    background-color: #1B1B1E;
+    color: #FBFFFE;
+  }
+
+  ::selection {
+    background-color: rgba(250, 169, 22, 0.25);
+    color: #FBFFFE;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1B1B1E;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2E2E32;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8E8E93;
   }
 }
 
@@ -26,9 +49,9 @@
   }
 }
 
-/* Cursor do TypeAnimation - azul */
+/* Cursor do TypeAnimation - dourado */
 .type-animation-cursor {
-  color: #2563EB !important;
+  color: #FAA916 !important;
   animation: blink 1s infinite;
 }
 

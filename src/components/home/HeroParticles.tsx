@@ -9,37 +9,38 @@ interface Particle {
   opacity: number
   duration: number
   delay: number
+  color: string
 }
+
+const PARTICLE_COLORS = ['#FAA916', '#FAA916', '#FAA916', '#01366B', '#FBFFFE']
 
 export default function HeroParticles() {
   const [particles, setParticles] = useState<Particle[]>([])
 
   useEffect(() => {
-    // Responsividade: menos partículas em mobile
     const getParticleCount = () => {
       if (typeof window === 'undefined') return 40
-      if (window.innerWidth < 640) return 20 // Mobile
-      if (window.innerWidth < 1024) return 30 // Tablet
-      return 40 // Desktop
+      if (window.innerWidth < 640) return 20
+      if (window.innerWidth < 1024) return 30
+      return 40
     }
 
-    // Gerar partículas com propriedades aleatórias
     const generateParticles = () => {
       const particleCount = getParticleCount()
       const newParticles: Particle[] = Array.from({ length: particleCount }, (_, i) => ({
         id: i,
         left: Math.random() * 100,
-        size: Math.random() * 4 + 2, // 2-6px
-        opacity: Math.random() * 0.2 + 0.1, // 0.1-0.3
-        duration: Math.random() * 40 + 20, // 20-60s
-        delay: Math.random() * -20, // Delay negativo para começar em posições diferentes
+        size: Math.random() * 4 + 2,
+        opacity: Math.random() * 0.25 + 0.08,
+        duration: Math.random() * 40 + 20,
+        delay: Math.random() * -20,
+        color: PARTICLE_COLORS[Math.floor(Math.random() * PARTICLE_COLORS.length)],
       }))
       setParticles(newParticles)
     }
 
     generateParticles()
 
-    // Atualizar partículas no resize (com debounce para performance)
     let resizeTimeout: NodeJS.Timeout
     const handleResize = () => {
       clearTimeout(resizeTimeout)
@@ -68,7 +69,7 @@ export default function HeroParticles() {
             bottom: '-10px',
             width: `${particle.size}px`,
             height: `${particle.size}px`,
-            background: '#2563EB',
+            background: particle.color,
             opacity: particle.opacity,
             borderRadius: '50%',
             filter: 'blur(1px)',
