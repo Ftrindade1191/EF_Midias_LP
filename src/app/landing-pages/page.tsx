@@ -103,6 +103,24 @@ const landingPages = [
     url: 'https://aerodromosjca.com.br/dc3/',
     image: '/images/portfolio-lp-6.png.png',
   },
+  {
+    client: 'Óticas Guimar',
+    niche: 'Ótica',
+    audience: 'Moradores do Jardim Pérola e região, 35-65 anos. Trabalhadores, aposentados e famílias que preferem comprar perto de casa, com atendimento de confiança e condições de pagamento acessíveis',
+    summary: 'Ótica local em Santa Bárbara d\'Oeste/SP com presença digital em construção e concorrência crescente na região. Comunicação direta, genuína e sem jargão, com foco em bairro, proximidade e facilidade de pagamento.',
+    objective: 'Gerar agendamentos e contatos via WhatsApp, para compra de óculos e teste de visão gratuito toda quarta-feira',
+    url: 'https://www.oticasguimarsbo.com.br/',
+    image: '/images/portfolio-lp-7.png.png',
+  },
+  {
+    client: 'Prime Bosque Pilates',
+    niche: 'Estúdio de Pilates',
+    audience: 'Moradores do Residencial do Bosque e entorno, 28 a 55 anos, que buscam pilates de qualidade sem sair do bairro. Perfil de médio a alto padrão, com rotina estruturada e disposição para investir em bem-estar',
+    summary: 'Estúdio novo sem presença digital, em lançamento. Primeiro estúdio de pilates do Residencial do Bosque, Mogi Mirim/SP. Posicionamento de lifestyle premium com credencial clínica como argumento de confiança, copy declarativa e tom sofisticado.',
+    objective: 'Gerar agendamentos de aula experimental gratuita via WhatsApp',
+    url: 'https://www.primebosquepilates.com.br/',
+    image: '/images/portfolio-lp-8.png.png',
+  },
 ]
 
 export default function LandingPagesPortfolio() {
